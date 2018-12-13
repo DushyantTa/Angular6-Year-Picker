@@ -1,0 +1,71 @@
+a{
+    font-weight: bolder;
+    font-family: monospace;
+    text-decoration: none;
+    cursor:pointer;
+    padding:5px;
+    font-size: large;
+}
+a:hover{
+    background-color:rgb(238, 238, 238);
+    border-radius:4px;
+}
+.row{
+    width: 180px !important;
+    overflow: overlay;
+    height: fit-content;
+    word-wrap: break-word;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-4{
+    border: none;
+    padding-top: 15px !important; 
+    padding:4px 4px;
+    text-decoration: none;
+    cursor: pointer;
+    width:35px !important;
+    height:35px !important;
+    top:2px;    
+    margin:1px;
+}
+.col-4:hover{
+    background-color:rgb(238, 238, 238);;
+}
+.selected {
+    color: white !important;
+    background-image: linear-gradient(to bottom, #08c, #0044cc);
+    width:33px !important;
+    height:33px !important;
+    text-decoration: none;
+    border:none;
+    cursor:pointer;
+    border-radius: 5px;
+    
+}
+.nav-box{
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    position: relative;
+    top: 10px;
+    margin-bottom: 15px;
+}
+.card {
+	margin-top:3px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    border: solid 0.5px grey;
+    padding:4px;
+    width:fit-content !important;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  

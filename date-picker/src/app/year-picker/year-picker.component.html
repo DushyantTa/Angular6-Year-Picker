@@ -1,0 +1,17 @@
+<input class="card" type="text" [(ngModel)]="year.yr" (focus)="show()" placeholder="YYYY" />
+<div *ngIf="isSelected">
+<div class="card">
+  <div class="nav-box">
+      <a class="link_button2" (click)="prev()"> << </a>
+    <a>{{ from }} - {{ to }}</a> 
+    <a class="link_button2" (click)="next()"> >> </a>
+</div>
+  <div class="row">
+      <div class="col-4" 
+        [class.selected]="item === selectedYear"
+        (click)="onSelect(item)"
+        *ngFor="let item of list" >{{item}}</div>
+    </div>
+</div>
+</div>
+    
